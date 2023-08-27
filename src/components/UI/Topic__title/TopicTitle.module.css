@@ -1,0 +1,48 @@
+.content__topic{
+    width: 1205px;
+    margin: 120px auto;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    height: 46px;
+    border-bottom: 1px solid #EDEDED;
+    position: relative;
+    margin-bottom: 40px;
+}
+.section::after{
+    content: '';
+    position: absolute;
+    width: 379px;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background: #008ecc;
+    border-radius: 3px;
+}
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    color: #666666;
+}
+.title span{
+    color: #008ecc;
+}
+
+.link{
+    color:#222222;
+    text-decoration: none;
+    margin:5px 11px;
+}
+.link:hover{
+    text-decoration: underline;
+    
+}
+.link::after{
+    content: url('./Stroke-1.svg');
+    margin-left: 12px;
+}

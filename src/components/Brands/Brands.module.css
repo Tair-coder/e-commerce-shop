@@ -1,0 +1,96 @@
+.section{
+    margin-bottom: 158px;
+}
+.sectionAfter::after{
+    width: 245px;
+}
+.brand__conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+}
+.brand__card{
+    flex-direction: row;
+    height: 207px;
+    width: 389px;
+    border-radius: 16px;
+    padding: 20px 0 10px 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.brand__card::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.brand__card.one::before{
+    content: url('./image/bg/Mask\ group.png');
+}
+.brand__card.two::before{
+    content: url('./image/bg/Mask\ group-1.png');
+}
+.brand__card.three::before{
+    content: url('./image/bg/Mask\ group-2.png');
+}
+.brand__card.one{
+    background: #313131;
+    padding-right: 44px;
+
+}
+.brand__card.two{
+    background: #FFF3CC;
+    padding-right: 17px;
+
+}
+
+.brand__card.three{
+    background: #FFECDF;
+    padding-right: 20px;
+
+}
+.brand__card.two .brandMean,
+.brand__card.three .brandMean,
+.brand__card.two .discount,
+.brand__card.three .discount{
+    color: #000;
+}
+.brandText {
+    display: flex;
+    flex-direction: column;
+    width: 162px;
+    align-items: flex-start;
+    color: #fff;
+}
+.brandMean{
+    margin-bottom: 20px;
+    padding: 9px 20px;
+    background: #494949;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}  
+.brand__card.two .brandMean{
+    background: #F6DE8D;
+
+}
+.brand__card.three .brandMean{
+    background: #FFD1B0;
+
+}
+.brandLogo{
+    margin-bottom: 20px;
+} 
+.discount{
+    font-weight: 600;
+    font-size: 24px;
+    cursor: pointer;
+}
+.phone{
+    z-index: 5;
+    filter: drop-shadow(0px 88px 35px rgba(0, 0, 0, 0.01)) 
+            drop-shadow(0px 49px 30px rgba(0, 0, 0, 0.05)) 
+            drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.09)) 
+            drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.1)) 
+            drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+}

@@ -1,0 +1,50 @@
+.sectionAfter::after{
+    width:164px;
+}
+.essential__conteiner{
+    width: 100%;
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.essential__card{
+    width: 187px;
+    height: 251px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.essential__imgCard{
+    height: 187px;
+    width: 187px;
+    border-radius: 16px;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+ 
+.essential__imgCard:hover{
+    box-shadow: 0px 52px 21px rgba(0, 0, 0, 0.01), 
+                0px 29px 18px rgba(0, 0, 0, 0.03), 0px 13px 13px rgba(0, 0, 0, 0.04), 
+                0px 3px 7px rgba(0, 0, 0, 0.05),
+                0px 0px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid #008ECC;
+    transition: all 0.1s;
+}
+.undertitle{
+    margin-bottom:4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+    
+}
+.discount {
+    font-size: 20px;
+    font-weight: 800;
+
+}

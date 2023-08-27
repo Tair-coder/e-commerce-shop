@@ -1,0 +1,38 @@
+.menu{
+    height: 69px;
+    width: 100%;
+    border-top: 1px solid  #ededed;
+    border-bottom: 1px solid  #ededed;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu__list{
+    width: 1205px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__item button {
+    font-weight: medium;
+    padding: 9px 14px;
+    background: #F3F9FB;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.menu__item button::after{
+    content: url('./image/arrow_non_active.svg');
+    margin-left: 6px;
+
+}
+.menu__item button:hover{
+    background: #008ecc;
+    color: #fff;
+}
+.menu__item button:hover::after{
+    content: url('./image/arrow_active.svg');
+}

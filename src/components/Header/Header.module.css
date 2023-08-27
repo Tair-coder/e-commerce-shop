@@ -1,0 +1,134 @@
+.section__header{
+    height: 161px;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1205px;
+    margin: auto;
+    height: 90px;
+}
+.btn{
+    height: 48px;
+    width: 48px;
+    border-radius: 10px;    
+    background: #F3F9FB;
+    border: none;
+    position: relative;
+    margin: 0 16px 10px 0 ;
+    transition: all 0.3s;
+    cursor: pointer;
+
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    top: 16px;
+    border-radius: 1px;
+    background:#008ecc;
+    left: 12px;
+}
+.btn::after{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 2px;
+    bottom:14px;
+    left: 12px;
+    border-radius: 1px;
+    background:#008ecc;
+}
+.btn span {
+    position: absolute;
+    left: 12px;
+    width: 19px;
+    height: 2px;
+    border-radius: 1px;
+    background:#008ecc;
+}
+.btn:hover {
+    background: #007fb6;
+}
+.btn:hover span{
+    background:#fff;
+  
+}
+.btn:hover::before{
+    background:#fff;
+  
+}
+.btn:hover::after{
+    background:#fff;
+  
+}
+.input__item{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.input__item::before{
+    content: url('./image/Search.svg');
+    position: absolute;
+    left: 16px;
+}
+.input__item span{
+    display: flex;
+    align-items: center;
+}
+.input__item span::after{
+    content:url('./image/draft/24/action/list.svg');
+    position: absolute;
+    right: 42px;
+    cursor: pointer;
+}
+.input{
+    margin-right: 30px;
+    width: 507px;
+    height: 48px;
+    background: #F3F9FB;
+    border-radius: 10px;
+    border: none;
+    font-family: 'HK Grotesk';
+    font-weight: 400;
+    padding-left: 44px;
+}
+.head__list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.head__item .log {
+    height: 24px;
+    width: 159px;
+    display: flex;    
+    color: #666666;
+}
+.head__item span a,.head__item a{
+    text-decoration: none;
+    color: #666666;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+}
+.head__item span a:nth-child(1):before{
+    content: url('./image/draft/24/action/user.svg');
+    margin-right: 6px;
+
+
+}
+.head__item .addCard::before{
+    content:url('./image/Buy.svg');
+    margin-right: 6px;
+}
+.hr{
+    width: 18px;
+    height: 1px;
+    transform: rotate(90deg);
+    background: #D9D9D9;
+    margin-right: 20px;
+}
